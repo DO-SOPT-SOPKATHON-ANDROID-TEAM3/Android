@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="data"
+            type="org.sopt.sopkaton_team3.data.model.response.ResponseData.DummyData" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.example.ExampleActivity">
+
+        <TextView
+            android:id="@+id/ex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(data.id)}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="아이디"/>
+
+        <TextView
+            android:id="@+id/ex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.name}"
+            app:layout_constraintTop_toBottomOf="@id/ex1"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="이름"/>
+
+        <TextView
+            android:id="@+id/ex3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.email}"
+            app:layout_constraintTop_toBottomOf="@id/ex2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="이메일"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Sopkaton_Team3" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="textAppearanceDisplayLarge">@style/Typography.SopkathonTeam3.Bold_57</item>
+        <item name="textAppearanceDisplayMedium">@style/Typography.SopkathonTeam3.Regular_45</item>
+        <item name="textAppearanceDisplaySmall">@style/Typography.SopkathonTeam3.Regular_36</item>
+        <item name="textAppearanceHeadlineLarge">@style/Typography.SopkathonTeam3.Regular_32</item>
+        <item name="textAppearanceHeadlineMedium">@style/Typography.SopkathonTeam3.Regular_28</item>
+        <item name="textAppearanceHeadlineSmall">@style/Typography.SopkathonTeam3.Regular_24</item>
+        <item name="textAppearanceTitleLarge">@style/Typography.SopkathonTeam3.Regular_22</item>
+        <item name="textAppearanceTitleMedium">@style/Typography.SopkathonTeam3.Medium_16</item>
+        <item name="textAppearanceTitleSmall">@style/Typography.SopkathonTeam3.Medium_14</item>
+        <item name="textAppearanceLabelLarge">@style/Typography.SopkathonTeam3.Regular_22</item>
+        <item name="textAppearanceLabelMedium">@style/Typography.SopkathonTeam3.Medium_16</item>
+        <item name="textAppearanceLabelSmall">@style/Typography.SopkathonTeam3.Medium_14</item>
+        <item name="textAppearanceBodyLarge">@style/Typography.SopkathonTeam3.Regular_16</item>
+        <item name="textAppearanceBodyMedium">@style/Typography.SopkathonTeam3.Medium_14</item>
+        <item name="textAppearanceBodySmall">@style/Typography.SopkathonTeam3.Medium_12</item>
+    </style>
+
+    <style name="Theme.Sopkaton_Team3" parent="Base.Theme.Sopkaton_Team3" />
+</resources>
