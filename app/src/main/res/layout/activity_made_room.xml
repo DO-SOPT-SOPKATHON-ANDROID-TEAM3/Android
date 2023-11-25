@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userList"
+            type="org.sopt.sopkaton_team3.data.model.response.ResponseUserListData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/made_room_toolbar"
+            layout="@layout/content_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/made_room_invite_code_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:text="초대코드"
+            android:textAppearance="?textAppearanceTitleMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/made_room_toolbar" />
+
+        <LinearLayout
+            android:id="@+id/made_room_invite_codes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/made_room_invite_code_title">
+
+            <TextView
+                android:id="@+id/made_room_invite_code_first"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_gray_line_5_rect"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceLabelLarge"
+                android:text="G" />
+
+            <TextView
+                android:id="@+id/made_room_invite_code_second"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_gray_line_5_rect"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceLabelLarge"
+                android:text="O" />
+
+            <TextView
+                android:id="@+id/made_room_invite_code_third"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_gray_line_5_rect"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceLabelLarge"
+                android:text="O" />
+
+            <TextView
+                android:id="@+id/made_room_invite_code_fourth"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_gray_line_5_rect"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceLabelLarge"
+                android:text="D" />
+
+            <TextView
+                android:id="@+id/made_room_invite_code_fifth"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_gray_line_5_rect"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceLabelLarge"
+                android:text="A" />
+
+            <TextView
+                android:id="@+id/made_room_invite_code_sixth"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_gray_line_5_rect"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceLabelLarge"
+                android:text="Y" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/made_room_user_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="그룹원"
+            android:textAppearance="?textAppearanceTitleMedium"
+            app:layout_constraintStart_toStartOf="@id/made_room_invite_code_title"
+            app:layout_constraintTop_toBottomOf="@id/made_room_invite_codes" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_made_room_user_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/made_room_user_list_title"
+            app:layout_constraintTop_toBottomOf="@id/made_room_user_list_title"
+            tools:listitem="@layout/item_user_info" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_made_room_join"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:background="@drawable/shape_gray_line_5_rect"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:text="시작하기"
+            android:textAppearance="?textAppearanceLabelMedium"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

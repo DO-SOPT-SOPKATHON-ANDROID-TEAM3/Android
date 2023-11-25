@@ -10,6 +10,8 @@ import org.sopt.sopkaton_team3.data.service.ResultService
 import retrofit2.Retrofit
 
 object ApiFactory {
+    private const val BASE_URL = BuildConfig.BASE_URL
+  
     private val client by lazy {
         OkHttpClient.Builder().addInterceptor(
             HttpLoggingInterceptor().apply {
@@ -30,4 +32,7 @@ object ServicePool {
     // val dummyService = ApiFactory.create<DummyService>()
     val exampleService = ExampleSource()
     val resultService = ApiFactory.create<ResultService>()
+    val madeRoomService = MadeRoomUserListSource()
+    val makeRoomService = ApiFactory.create<MakeRoomService>()
 }
+

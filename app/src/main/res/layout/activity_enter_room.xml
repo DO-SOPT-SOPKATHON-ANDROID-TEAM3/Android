@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.enterRoom.EnterRoomActivity">
+
+ <include
+     android:id="@+id/toolbar"
+     layout="@layout/content_toolbar"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <TextView
+     android:id="@+id/tv_room_invite_title"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="초대코드"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:layout_marginTop="20dp"
+     android:layout_marginStart="17dp"
+     android:fontFamily="@font/pretendard_medium"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+
+ <EditText
+     android:id="@+id/ev_room_invite_code_1"
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:layout_marginTop="12dp"
+     android:maxLength="1"
+     android:gravity="center"
+     android:padding="11dp"
+     android:textSize="22sp"
+     android:nextFocusDown="@id/ev_room_invite_code_2"
+     android:background="@drawable/shape_gray_line_5_rect"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toStartOf="@id/ev_room_invite_code_2"
+     app:layout_constraintTop_toBottomOf="@id/tv_room_invite_title"/>
+
+
+ <EditText
+     android:id="@+id/ev_room_invite_code_2"
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:layout_marginTop="12dp"
+     android:maxLength="1"
+     android:gravity="center"
+     android:padding="11dp"
+     android:textSize="22sp"
+     android:nextFocusDown="@id/ev_room_invite_code_3"
+     android:background="@drawable/shape_gray_line_5_rect"
+     app:layout_constraintStart_toEndOf="@id/ev_room_invite_code_1"
+     app:layout_constraintEnd_toStartOf="@id/ev_room_invite_code_3"
+     app:layout_constraintTop_toBottomOf="@id/tv_room_invite_title"/>
+
+
+ <EditText
+     android:id="@+id/ev_room_invite_code_3"
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:layout_marginTop="12dp"
+     android:maxLength="1"
+     android:gravity="center"
+     android:padding="11dp"
+     android:textSize="22sp"
+     android:nextFocusDown="@id/ev_room_invite_code_4"
+     android:background="@drawable/shape_gray_line_5_rect"
+    app:layout_constraintStart_toEndOf="@id/ev_room_invite_code_2"
+     app:layout_constraintEnd_toStartOf="@id/ev_room_invite_code_4"
+     app:layout_constraintTop_toBottomOf="@id/tv_room_invite_title"/>
+
+
+ <EditText
+     android:id="@+id/ev_room_invite_code_4"
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:layout_marginTop="12dp"
+     android:maxLength="1"
+     android:gravity="center"
+     android:padding="11dp"
+     android:textSize="22sp"
+     android:nextFocusDown="@id/ev_room_invite_code_5"
+     android:background="@drawable/shape_gray_line_5_rect"
+     app:layout_constraintStart_toEndOf="@id/ev_room_invite_code_3"
+     app:layout_constraintEnd_toStartOf="@id/ev_room_invite_code_5"
+     app:layout_constraintTop_toBottomOf="@id/tv_room_invite_title"/>
+
+
+ <EditText
+     android:id="@+id/ev_room_invite_code_5"
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:layout_marginTop="12dp"
+     android:maxLength="1"
+     android:gravity="center"
+     android:padding="11dp"
+     android:textSize="22sp"
+     android:nextFocusDown="@id/ev_room_invite_code_6"
+     android:background="@drawable/shape_gray_line_5_rect"
+     app:layout_constraintStart_toEndOf="@id/ev_room_invite_code_4"
+     app:layout_constraintTop_toBottomOf="@id/tv_room_invite_title"
+     app:layout_constraintEnd_toStartOf="@id/ev_room_invite_code_6"/>
+
+
+ <EditText
+     android:id="@+id/ev_room_invite_code_6"
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:layout_marginTop="12dp"
+     android:maxLength="1"
+     android:gravity="center"
+     android:padding="11dp"
+     android:textSize="22sp"
+     android:background="@drawable/shape_gray_line_5_rect"
+     app:layout_constraintStart_toEndOf="@id/ev_room_invite_code_5"
+     app:layout_constraintTop_toBottomOf="@id/tv_room_invite_title"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+
+ <TextView
+     android:id="@+id/tv_room_name"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="이름"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:layout_marginTop="20dp"
+     android:layout_marginStart="17dp"
+     android:fontFamily="@font/pretendard_medium"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/ev_room_invite_code_6"/>
+
+ <EditText
+     android:id="@+id/et_room_name"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:background="@drawable/shape_gray_line_5_rect"
+     android:padding="11dp"
+     android:layout_marginHorizontal="16dp"
+     android:layout_marginTop="12dp"
+     android:hint="이름을 입력하세요"
+     android:maxLines="1"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/tv_room_name"/>
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/btn_enter_room"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:text="입장하기"
+     android:paddingVertical="14dp"
+     android:layout_marginHorizontal="16dp"
+     android:gravity="center"
+     android:textColor="@color/white"
+     android:textSize="16sp"
+     android:background="@drawable/shape_gray_line_5_rect"
+     android:layout_marginBottom="20dp"
+     android:backgroundTint="@color/black"
+     android:fontFamily="@font/pretendard_medium"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
