@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.SlotActivity">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            app:layout_constraintBottom_toTopOf="@id/tv_end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="end"
+            app:layout_constraintTop_toBottomOf="@id/tv_start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/ml_slot_down"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/cl_slot_down_scene"
+            app:layout_constraintTop_toTopOf="@id/tv_start"
+            app:layout_constraintBottom_toBottomOf="@id/tv_end"
+            app:layout_constraintStart_toEndOf="@id/tv_start" >
+
+            <View
+                android:id="@+id/v_handle"
+                android:layout_width="12dp"
+                android:layout_height="0dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toTopOf="@id/iv_slot_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/iv_slot_down"
+                app:layout_constraintEnd_toEndOf="@id/iv_slot_down" />
+            <ImageView
+                android:id="@+id/iv_slot_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_slot_ellipse"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
