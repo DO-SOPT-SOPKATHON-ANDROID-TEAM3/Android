@@ -18,10 +18,9 @@
             android:id="@+id/user_image"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:background="@drawable/ic_profile_ellipse"
+            android:src="@drawable/img_cherry_profile"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/ic_launcher_foreground" />
 

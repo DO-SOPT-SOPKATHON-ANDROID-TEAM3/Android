@@ -22,6 +22,10 @@ class MadeRoomActivity : BindingActivity<ActivityMadeRoomBinding>(R.layout.activ
         val dividerItemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         binding.rvMadeRoomUserList.addItemDecoration(dividerItemDecoration)
 
+        binding.btnMadeRoomJoin.setOnClickListener {
+            Log.e("TAG", "페이지 이동", )
+            // 페이지 이동
+        }
 
         viewModel.userList.observe(this) {
             binding.userList = it
