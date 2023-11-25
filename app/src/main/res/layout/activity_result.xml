@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="org.sopt.sopkaton_team3.data.model.response.ResultResponse.Data.FistUser" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/result_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_left_arrow_whit_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_toolbar_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_toolbar_title" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                android:text="좋은데?"
+                android:textAppearance="?textAppearanceTitleLarge"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/iv_toolbar_back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_result"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/bg_result"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/result_toolbar">
+
+            <TextView
+                android:id="@+id/tv_result_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="28dp"
+                android:text="내 결과"
+                android:textAppearance="?textAppearanceBodyMedium"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_result_my_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{data.name}"
+                android:textAppearance="?textAppearanceTitleLarge"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_result_my"
+                app:layout_constraintTop_toBottomOf="@id/tv_result_my"
+                tools:text="김바라" />
+
+            <TextView
+                android:id="@+id/tv_result_my_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 님 좋은데이 보내세요!"
+                android:textAppearance="?textAppearanceTitleLarge"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_result_my_name"
+                app:layout_constraintStart_toEndOf="@id/tv_result_my_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_result_my" />
+
+            <TextView
+                android:id="@+id/tv_result_chip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/bg_result_keyword"
+                android:paddingHorizontal="8dp"
+                android:text="@{data.what}"
+                android:textAppearance="?textAppearanceTitleMedium"
+                android:textColor="#EA436A"
+                app:layout_constraintStart_toStartOf="@+id/tv_result_my_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_result_my_name"
+                tools:text="친척과" />
+
+            <TextView
+                android:id="@+id/tv_result_chip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_result_keyword"
+                android:paddingHorizontal="8dp"
+                android:text="@{data.where}"
+                android:textAppearance="?textAppearanceTitleMedium"
+                android:textColor="#EA436A"
+                app:layout_constraintStart_toEndOf="@+id/tv_result_chip1"
+                app:layout_constraintTop_toTopOf="@+id/tv_result_chip1"
+                tools:text="인천 바다에서" />
+
+            <TextView
+                android:id="@+id/tv_result_chip3"
+                android:layout_width="107dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_result_keyword"
+                android:paddingHorizontal="8dp"
+                android:text="@{data.who}"
+                android:textAppearance="?textAppearanceTitleMedium"
+                android:textColor="#EA436A"
+                app:layout_constraintStart_toStartOf="@+id/tv_result_chip1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_result_chip1"
+                tools:text="갯벌체험 하기" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_result_group_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="그룹원"
+            android:textAppearance="?textAppearanceTitleMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_result" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_result_group_members"
+            tools:listitem="@layout/item_result" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
