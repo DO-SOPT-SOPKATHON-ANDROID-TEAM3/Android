@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.InitRoomActivity">
+    tools:context=".presentation.initRoom.InitRoomActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_make_room"

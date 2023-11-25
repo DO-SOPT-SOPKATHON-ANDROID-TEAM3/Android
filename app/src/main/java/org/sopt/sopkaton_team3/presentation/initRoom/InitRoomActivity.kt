@@ -1,9 +1,7 @@
-package org.sopt.sopkaton_team3.presentation
+package org.sopt.sopkaton_team3.presentation.initRoom
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import org.sopt.sopkaton_team3.R
 import org.sopt.sopkaton_team3.databinding.ActivityInitRoomBinding
 
 class InitRoomActivity : AppCompatActivity() {
