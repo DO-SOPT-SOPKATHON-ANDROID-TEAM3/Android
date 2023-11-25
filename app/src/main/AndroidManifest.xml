@@ -34,7 +34,15 @@
         <activity
             android:name=".presentation.SlotActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".presentation.ResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
         </activity>
     </application>
 
