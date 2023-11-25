@@ -25,27 +25,21 @@
             android:name=".presentation.example.ExampleActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-
         </activity>
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-
         </activity>
-
         <activity
             android:name=".presentation.ProgressActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-
         </activity>
-
         <activity
             android:name=".presentation.makeRoom.MakeRoomActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".presentation.SlotActivity"
             android:exported="true"
@@ -55,17 +49,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
-
         <activity
             android:name=".presentation.ResultActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-
         </activity>
-
         <activity
             android:name=".presentation.madeRoom.MadeRoomActivity"
             android:exported="true"

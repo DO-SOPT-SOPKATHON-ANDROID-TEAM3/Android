@@ -1,5 +1,6 @@
 package org.sopt.sopkaton_team3.presentation
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -94,6 +95,10 @@ class SlotActivity : AppCompatActivity() {
                             job3?.cancel()
                             slotAdapter3.submitList(viewModel.listOne.value)
                             binding.btnStart.isVisible = true
+                            binding.btnStart.setOnClickListener {
+                                val intent = Intent(this, ResultActivity::class.java)
+                                startActivity(intent)
+                            }
                             currentCheck++
                         }
                     }
