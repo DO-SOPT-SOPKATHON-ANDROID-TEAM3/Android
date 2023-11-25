@@ -14,12 +14,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include
-            android:id="@+id/made_room_toolbar"
-            layout="@layout/content_toolbar"
-            app:layout_constraintEnd_toEndOf="parent"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_made_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:id="@+id/iv_made_room_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow_whit_24" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAppearance="?textAppearanceTitleLarge"
+                android:text="방 만들기" />
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:id="@+id/made_room_invite_code_title"
@@ -32,7 +47,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/made_room_toolbar" />
+            app:layout_constraintTop_toBottomOf="@id/tb_made_room" />
 
         <LinearLayout
             android:id="@+id/made_room_invite_codes"
@@ -130,7 +145,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="42dp"
             android:background="@drawable/shape_gray_line_5_rect"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="#FFE93636"
             android:layout_marginHorizontal="16dp"
             android:paddingVertical="14dp"
             android:text="시작하기"
