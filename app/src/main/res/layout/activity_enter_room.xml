@@ -6,11 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".presentation.enterRoom.EnterRoomActivity">
 
- <include
-     android:id="@+id/toolbar"
-     layout="@layout/content_toolbar"
+ <androidx.appcompat.widget.Toolbar
+     android:id="@+id/tb_slot"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     app:layout_constraintTop_toTopOf="parent"
      app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toTopOf="parent" />
+     app:layout_constraintEnd_toEndOf="parent">
+  <ImageView
+      android:id="@+id/iv_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_left_arrow_whit_24" />
+  <TextView
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:textAppearance="?textAppearanceTitleLarge"
+      android:text="방 입장하기" />
+ </androidx.appcompat.widget.Toolbar>
 
  <TextView
      android:id="@+id/tv_room_invite_title"
@@ -23,7 +39,7 @@
      android:layout_marginStart="17dp"
      android:fontFamily="@font/pretendard_medium"
      app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+     app:layout_constraintTop_toBottomOf="@id/tb_slot"/>
 
  <EditText
      android:id="@+id/ev_room_invite_code_1"
