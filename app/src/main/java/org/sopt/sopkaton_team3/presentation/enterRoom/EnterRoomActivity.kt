@@ -38,6 +38,7 @@ class EnterRoomActivity : AppCompatActivity() {
                 val intent = Intent(this, MadeRoomActivity::class.java)
                 startActivity(intent)
             }else{
+                toast("잘못된 초대 코드입니다.")
             }
         }
     }
