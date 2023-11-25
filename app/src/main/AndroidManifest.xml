@@ -36,6 +36,11 @@
             android:exported="true"
             android:screenOrientation="portrait" >
         </activity>
+
+        <activity
+            android:name=".presentation.madeRoom.MadeRoomActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
