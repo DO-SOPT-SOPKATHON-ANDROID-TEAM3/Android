@@ -58,12 +58,12 @@
                 android:id="@+id/tv_slot_whopick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="&quot;김바라&quot;"
+                android:text="&quot;양정윤&quot;"
                 android:textAppearance="@style/Typography.SopkathonTeam3.Bold_24" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="가 뽑아주는"
+                android:text="이 뽑아주는"
                 android:textAppearance="@style/Typography.SopkathonTeam3.Regular_24" />
         </LinearLayout>
         <LinearLayout
@@ -79,7 +79,7 @@
                 android:id="@+id/tv_slot_pickwhat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="&quot;김바라&quot;"
+                android:text="&quot;김대덕&quot;"
                 android:textAppearance="@style/Typography.SopkathonTeam3.Bold_24" />
             <TextView
                 android:layout_width="wrap_content"
@@ -125,15 +125,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="160dp"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginHorizontal="10dp"
             app:layout_constraintTop_toTopOf="@id/iv_slot"
             app:layout_constraintStart_toStartOf="@id/iv_slot"
             app:layout_constraintEnd_toEndOf="@id/iv_slot">
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/vp_1"
                 android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_height="200dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -142,7 +142,7 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/vp_2"
                 android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_height="200dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toEndOf="@id/vp_1"
                 app:layout_constraintTop_toTopOf="parent"
@@ -151,7 +151,7 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/vp_3"
                 android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_height="200dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toEndOf="@id/vp_2"
                 app:layout_constraintTop_toTopOf="parent"
@@ -205,8 +205,8 @@
             android:textColor="@color/white"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="34dp"
+            android:backgroundTint="#E93636"
             android:background="@drawable/shape_gray_line_10_rect"
-            android:backgroundTint="@color/goodday_pink"
             android:visibility="invisible"
             android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
             app:layout_constraintBottom_toBottomOf="parent"

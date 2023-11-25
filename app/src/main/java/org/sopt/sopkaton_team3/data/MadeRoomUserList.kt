@@ -8,7 +8,7 @@ object MadeRoomUserList {
         listOf(
             ResponseUserListData.UserInfo(
                 image = R.drawable.img_watermelon_profile,
-                name = "최윤한",
+                name = "양정윤",
                 role = "방장",
             ),
             ResponseUserListData.UserInfo(

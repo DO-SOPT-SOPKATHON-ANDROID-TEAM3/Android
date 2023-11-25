@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textAppearance="?textAppearanceTitleLarge"
-                android:text="방 만들기" />
+                android:text="기다려주세요" />
         </androidx.appcompat.widget.Toolbar>
 
         <TextView

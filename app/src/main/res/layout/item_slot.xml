@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="3dp"
-    android:background="@color/white"
+    android:background="@drawable/shape_white_fill_5_rect"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView

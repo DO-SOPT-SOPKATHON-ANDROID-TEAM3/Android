@@ -19,6 +19,8 @@ class MakeRoomActivity : BindingActivity<ActivityMakeRoomBinding>(R.layout.activ
 
         viewModel.userNameSuccess.observe(this) {
             if (it) {
+                val intent = Intent(this, MadeRoomActivity::class.java)
+                startActivity(intent)
             } else {
                 toast("실패!!!!!!!!!!!!!!")
             }
@@ -28,6 +30,9 @@ class MakeRoomActivity : BindingActivity<ActivityMakeRoomBinding>(R.layout.activ
             lifecycleScope.launch {
                 viewModel.createRoomBtn(binding.tvMakeRoomNameTitle.text.toString())
             }
+        }
+        binding.ivMakeRoomBack.setOnClickListener {
+            finish()
         }
     }
 }
