@@ -19,7 +19,7 @@
             android:name=".presentation.enterRoom.EnterRoomActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.InitRoomActivity"
+            android:name=".presentation.initRoom.InitRoomActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.example.ExampleActivity"

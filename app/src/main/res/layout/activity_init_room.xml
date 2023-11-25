@@ -4,7 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.InitRoomActivity">
+    tools:context=".presentation.initRoom.InitRoomActivity">
+
+    <TextView
+        android:id="@+id/tv_init_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wish you a good day"
+        android:textSize="26sp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/pretendard_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_init_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하루 정도야 막 살아보지 뭐"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pretendard_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_init_title"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_init_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_init_sub"/>
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_make_room"
@@ -15,7 +49,7 @@
         android:layout_marginHorizontal="16dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:background="@drawable/shape_gray_line_5_rect"
+        android:background="@drawable/shape_gray_line_10_rect"
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/pretendard_medium"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +66,7 @@
         android:textColor="@color/white"
         android:layout_marginBottom="20dp"
         android:textSize="16sp"
-        android:background="@drawable/shape_gray_line_5_rect"
+        android:background="@drawable/shape_gray_line_10_rect"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/pretendard_medium"
         app:layout_constraintStart_toStartOf="parent"

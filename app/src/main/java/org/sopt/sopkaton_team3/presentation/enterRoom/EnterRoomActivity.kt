@@ -32,8 +32,8 @@ class EnterRoomActivity : AppCompatActivity() {
         enterRoomViewModel.requestSuccess.observe(this){
             if(it){
                 toast("요청 성공")
-//                val intentEnterRoom = Intent(this, ) // 다음 액티비티 넣기
-//                startActivity(intentEnterRoom)
+       //         val intentEnterRoom = Intent(this, )
+       //         startActivity(intentEnterRoom)
             }else{
                 toast("요청 실패")
             }
