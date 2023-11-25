@@ -205,7 +205,7 @@
             android:textColor="@color/white"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="34dp"
-            android:background="@drawable/shape_gray_line_5_rect"
+            android:background="@drawable/shape_gray_line_10_rect"
             android:backgroundTint="@color/goodday_pink"
             android:visibility="invisible"
             android:textAppearance="@style/TextAppearance.Material3.LabelMedium"

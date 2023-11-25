@@ -1,11 +1,13 @@
 package org.sopt.sopkaton_team3.presentation.makeRoom
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import org.sopt.sopkaton_team3.R
 import org.sopt.sopkaton_team3.databinding.ActivityMakeRoomBinding
+import org.sopt.sopkaton_team3.presentation.madeRoom.MadeRoomActivity
 import org.sopt.sopkaton_team3.util.binding.BindingActivity
 import org.sopt.sopkaton_team3.util.context.toast
 
@@ -17,7 +19,6 @@ class MakeRoomActivity : BindingActivity<ActivityMakeRoomBinding>(R.layout.activ
 
         viewModel.userNameSuccess.observe(this) {
             if (it) {
-                // 페이지 이동
             } else {
                 toast("실패!!!!!!!!!!!!!!")
             }
