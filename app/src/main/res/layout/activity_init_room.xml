@@ -16,7 +16,6 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:backgroundTint="@color/white"
-        android:width="1dp"
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/pretendard_medium"
         app:layout_constraintStart_toStartOf="parent"

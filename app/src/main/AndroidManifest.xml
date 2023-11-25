@@ -15,17 +15,16 @@
         android:theme="@style/Theme.Sopkaton_Team3"
         android:usesCleartextTraffic="true"
         tools:targetApi="31" >
-
+        <activity
+            android:name=".presentation.EnterRoomActivity"
+            android:exported="false" />
         <activity
             android:name=".presentation.InitRoomActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.example.ExampleActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-            <activity
-                android:name=".presentation.EnterRoomActivity"
-                android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
