@@ -5,16 +5,19 @@ import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import org.sopt.sopkaton_team3.BuildConfig
-import org.sopt.sopkaton_team3.data.service.MakeRoomService
+import org.sopt.sopkaton_team3.BuildConfig.BASE_URL
+import org.sopt.sopkaton_team3.data.service.ResultService
 import retrofit2.Retrofit
 
 object ApiFactory {
     private const val BASE_URL = BuildConfig.BASE_URL
+  
     private val client by lazy {
-        OkHttpClient.Builder().addInterceptor(HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BODY
-        }).build()
+        OkHttpClient.Builder().addInterceptor(
+            HttpLoggingInterceptor().apply {
+                level = HttpLoggingInterceptor.Level.BODY
+            },
+        ).build()
     }
     val retrofit: Retrofit by lazy {
         Retrofit.Builder().baseUrl(BASE_URL)
@@ -22,13 +25,14 @@ object ApiFactory {
             .client(client).build()
     }
 
-
     inline fun <reified T> create(): T = retrofit.create<T>(T::class.java)
 }
 
 object ServicePool {
-    //val dummyService = ApiFactory.create<DummyService>()
+    // val dummyService = ApiFactory.create<DummyService>()
     val exampleService = ExampleSource()
+    val resultService = ApiFactory.create<ResultService>()
     val madeRoomService = MadeRoomUserListSource()
     val makeRoomService = ApiFactory.create<MakeRoomService>()
 }
+

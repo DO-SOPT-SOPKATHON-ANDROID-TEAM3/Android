@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="org.sopt.sopkaton_team3.data.model.response.ResultResponse.Data.Other" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tv_result_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_profile_ellipse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_result_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:text="@{data.name}"
+            android:textAppearance="?textAppearanceBodySmall"
+            android:textColor="@color/Gray600"
+            app:layout_constraintStart_toEndOf="@id/tv_result_image"
+            app:layout_constraintTop_toTopOf="@id/tv_result_image"
+            tools:text="김병장" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:background="@color/Gray500"
+            app:layout_constraintStart_toEndOf="@id/tv_result_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_result_name" />
+
+        <TextView
+            android:id="@+id/tv_result_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="조원"
+            android:textAppearance="?textAppearanceBodySmall"
+            android:textColor="@color/Gray600"
+            app:layout_constraintStart_toEndOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/tv_result_image"
+            tools:text="방장" />
+
+        <TextView
+            android:id="@+id/tv_result_slot_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@{data.todo}"
+            android:textAppearance="?textAppearanceBodySmall"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tv_result_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_result_name"
+            tools:text="바라와 한강에서 치맥을 먹는다" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
