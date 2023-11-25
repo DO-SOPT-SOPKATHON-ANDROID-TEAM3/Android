@@ -6,11 +6,14 @@
 랜덤 슬롯 기능: 그룹원이 유저의 일정 중 'who', 'where', 'what'을 랜덤으로 결정한다.    
 </br>
 
+# 🎬 시연영상
+곧 업로드 예정입니다.
+
 # 👨‍👩‍👧‍👦 Members
 |<img src="https://avatars.githubusercontent.com/u/113014331?v=4" width="128" />|<img src="https://avatars.githubusercontent.com/u/113578158?v=4" width="128" />|<img src="https://avatars.githubusercontent.com/u/52882799?v=4" width="128" />|<img src="https://avatars.githubusercontent.com/u/128459613?v=4" width="128" />| 
 |:---------:|:---------:|:---------:|:---------:|
 |[👑우상욱](https://github.com/Sangwook123)|[이준희](https://github.com/l2zh)|[박동민](https://github.com/chattymin)|[이유빈](https://github.com/leeeyubin)|
-| Slot View | 결과 View | 방 만들기 View | 방 들어가기 View |
+| `Slot Screen` | `Loading 화면`<br/>`결과 화면` | `Splash Screen`<br/>`방 만들기`<br/>`대기실` | `초기 화면`<br/>`방 입장하기`|
 </br>
 
 # 💻 Code Convention
