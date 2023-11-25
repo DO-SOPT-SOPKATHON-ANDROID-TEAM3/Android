@@ -46,7 +46,15 @@
         </activity>
 
         <activity
-            android:name=".presentation.SlotActivity"
+            android:name=".presentation.makeRoom.MakeRoomActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+           
+
+             android:name=".presentation.SlotActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
     </activity>
