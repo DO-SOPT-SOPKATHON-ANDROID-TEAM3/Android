@@ -14,24 +14,63 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_slot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow_whit_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="방 입장하기"
+                android:textAppearance="?textAppearanceTitleLarge"
+                android:textColor="@color/black" />
+
+        </androidx.appcompat.widget.Toolbar>
+
         <com.mikhaellopez.circularprogressbar.CircularProgressBar
             android:id="@+id/circularProgressBar"
-            android:layout_width="0dp"
+            android:layout_width="210dp"
             android:layout_height="0dp"
             android:layout_marginHorizontal="29dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="80dp"
             android:progress="@{viewmodel.leftPeople}"
-            app:cpb_background_progressbar_color="@color/white"
-            app:cpb_background_progressbar_width="11dp"
+            app:cpb_background_progressbar_color="#D9D9D9"
+            app:cpb_background_progressbar_width="5dp"
             app:cpb_progress_direction="to_right"
             app:cpb_progress_max="@{viewmodel.maxPeople}"
-            app:cpb_progressbar_color="@color/black"
-            app:cpb_progressbar_width="10dp"
+            app:cpb_progressbar_color="#E93636"
+            app:cpb_progressbar_width="5dp"
             app:cpb_round_border="true"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/tb_slot" />
+
+        <TextView
+            android:id="@+id/tv_progress_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="기다리는 중... "
+            android:textAppearance="@style/Typography.SopkathonTeam3.Bold_24"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
 
         <TextView
             android:id="@+id/tv_progress_people"
@@ -39,10 +78,17 @@
             max="@{viewmodel.maxPeople}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
-            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
-            app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
-            app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_progress_message"
+            app:layout_constraintStart_toStartOf="@+id/tv_progress_message"
+            app:layout_constraintTop_toBottomOf="@+id/tv_progress_message"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/img_loading"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circularProgressBar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
