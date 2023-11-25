@@ -19,14 +19,14 @@ class InitRoomActivity : AppCompatActivity() {
 
     private fun initMakeRoomBtnListener(){
         binding.btnMakeRoom.setOnClickListener{
-            val intentMakeRoomActivity = Intent(this, ) // 다음 액티비티 넣기
-            startActivity(intentMakeRoomActivity)
+//            val intentMakeRoomActivity = Intent(this, ) // 다음 액티비티 넣기
+//            startActivity(intentMakeRoomActivity)
         }
     }
     private fun initEnterRoomListener(){
         binding.btnEnterRoom.setOnClickListener{
-            val intentEnterRoomActivity = Intent(this, ) // 다음 액티비티 넣기
-            startActivity(intentEnterRoomActivity)
+//            val intentEnterRoomActivity = Intent(this, ) // 다음 액티비티 넣기
+//            startActivity(intentEnterRoomActivity)
         }
     }
 }

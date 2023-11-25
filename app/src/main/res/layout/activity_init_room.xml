@@ -15,7 +15,6 @@
         android:layout_marginHorizontal="16dp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:backgroundTint="@color/white"
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/pretendard_medium"
         app:layout_constraintStart_toStartOf="parent"

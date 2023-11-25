@@ -18,8 +18,8 @@ class EnterRoomActivity : AppCompatActivity() {
     }
     private fun enterRoomBtnListener(){
         binding.btnEnterRoom.setOnClickListener{
-            val intentEnterRoom = Intent(this, ) // 다음 액티비티 넣기
-            startActivity(intentEnterRoom)
+//            val intentEnterRoom = Intent(this, ) // 다음 액티비티 넣기
+//            startActivity(intentEnterRoom)
         }
     }
 }
