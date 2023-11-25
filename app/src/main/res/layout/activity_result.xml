@@ -23,6 +23,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
+
             <ImageView
                 android:id="@+id/iv_result_back"
                 android:layout_width="wrap_content"
@@ -34,8 +35,15 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textAppearance="?textAppearanceTitleLarge"
-                android:text="좋은데?" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/iv_toolbar_back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.appcompat.widget.Toolbar>
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_result"
@@ -136,6 +144,7 @@
             app:layout_constraintTop_toBottomOf="@id/cl_result" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="30dp"
             android:id="@+id/rv_result"
             android:layout_width="match_parent"
             android:layout_height="0dp"

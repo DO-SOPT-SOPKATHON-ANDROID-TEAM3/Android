@@ -7,14 +7,14 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.sopt.sopkaton_team3.BuildConfig
 import org.sopt.sopkaton_team3.data.service.EnterService
-import org.sopt.sopkaton_team3.data.service.SlotService
 import org.sopt.sopkaton_team3.data.service.MakeRoomService
 import org.sopt.sopkaton_team3.data.service.ResultService
+import org.sopt.sopkaton_team3.data.service.SlotService
 import retrofit2.Retrofit
 
 object ApiFactory {
     private const val BASE_URL = BuildConfig.BASE_URL
-  
+
     private val client by lazy {
         OkHttpClient.Builder().addInterceptor(
             HttpLoggingInterceptor().apply {
