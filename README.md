@@ -7,11 +7,11 @@
 </br>
 
 # 🎬 시연영상
-|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/10d81bd2-ea1f-44da-8470-9c9bbb9a6e98" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/fc1cca7b-66cc-4590-a15d-a0d496d1a6f5" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/ed6e3a71-7bd4-45c7-a561-f279753b949b" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/c03e090a-97fc-47d8-9b93-675685765a8b" width=100% />|
+|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/10d81bd2-ea1f-44da-8470-9c9bbb9a6e98" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/fc1cca7b-66cc-4590-a15d-a0d496d1a6f5" width=50% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/ed6e3a71-7bd4-45c7-a561-f279753b949b" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/c03e090a-97fc-47d8-9b93-675685765a8b" width=100% />|
 |:---------:|:---------:|:---------:|:---------:|
 |Splash 화면|초기화면|방 만들기|방 입장하기|  
 
-|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/c43b9bfe-a2ce-4e07-bf8d-f774c9f0e367" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/ca053559-4041-4b60-b9d7-7d63212b62d1" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/5d618ce6-58d4-43b0-b66b-f18fd2a8de36" width=100% />|
+|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/c43b9bfe-a2ce-4e07-bf8d-f774c9f0e367" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/ca053559-4041-4b60-b9d7-7d63212b62d1" width=100% />|<img src="https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/5d618ce6-58d4-43b0-b66b-f18fd2a8de36" width=50% />|
 |:---------:|:---------:|:---------:|
 |Slot 화면|Loading 화면|결과 화면|
 </br>
