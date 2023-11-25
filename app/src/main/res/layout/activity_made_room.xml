@@ -48,7 +48,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/shape_gray_line_5_rect"
+                android:background="@drawable/shape_gray_line_10_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
                 android:text="G" />
@@ -58,7 +58,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/shape_gray_line_5_rect"
+                android:background="@drawable/shape_gray_line_10_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
                 android:text="O" />
@@ -68,7 +68,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/shape_gray_line_5_rect"
+                android:background="@drawable/shape_gray_line_10_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
                 android:text="O" />
@@ -78,7 +78,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/shape_gray_line_5_rect"
+                android:background="@drawable/shape_gray_line_10_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
                 android:text="D" />
@@ -88,7 +88,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/shape_gray_line_5_rect"
+                android:background="@drawable/shape_gray_line_10_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
                 android:text="A" />
@@ -97,7 +97,7 @@
                 android:id="@+id/made_room_invite_code_sixth"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:background="@drawable/shape_gray_line_5_rect"
+                android:background="@drawable/shape_gray_line_10_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
                 android:text="Y" />
@@ -129,7 +129,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="42dp"
-            android:background="@drawable/shape_gray_line_5_rect"
+            android:background="@drawable/shape_gray_line_10_rect"
             android:backgroundTint="@color/black"
             android:layout_marginHorizontal="16dp"
             android:paddingVertical="14dp"
