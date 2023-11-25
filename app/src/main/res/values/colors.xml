@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="goodday_pink">#FFFF48B5</color>
+
+    <color name="Sub">#FFF5FF9C</color>
+    <color name="Black">#FF010101</color>
+    <color name="Gray800">#FF161616</color>
+    <color name="Gray700">#FF333333</color>
+    <color name="Gray600">#FF888888</color>
+    <color name="Gray500">#FFC9C9C9</color>
+    <color name="Gray400">#FFE3E3E3</color>
+    <color name="Gray300">#FFF2F2F2</color>
 </resources>
