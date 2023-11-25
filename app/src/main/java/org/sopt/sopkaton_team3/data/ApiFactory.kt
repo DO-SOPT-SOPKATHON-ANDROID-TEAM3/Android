@@ -5,6 +5,9 @@ import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.sopt.sopkaton_team3.data.service.EnterService
+import org.sopt.sopkaton_team3.data.service.ExampleService
+import org.sopt.sopkaton_team3.data.service.MadeRoomService
 import retrofit2.Retrofit
 
 object ApiFactory {
@@ -25,7 +28,7 @@ object ApiFactory {
 }
 
 object ServicePool {
-    //val dummyService = ApiFactory.create<DummyService>()
+    //val madeRoomService = ApiFactory.create<MadeRoomService>()
     val exampleService = ExampleSource()
-    val madeRoomService = MadeRoomUserListSource()
+    val enterRoomService = ApiFactory.create<EnterService>()
 }

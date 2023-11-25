@@ -16,7 +16,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31" >
         <activity
-            android:name=".presentation.EnterRoomActivity"
+            android:name=".presentation.enterRoom.EnterRoomActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.InitRoomActivity"
