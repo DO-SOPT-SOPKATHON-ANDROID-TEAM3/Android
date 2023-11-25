@@ -1,9 +1,24 @@
 package org.sopt.sopkaton_team3.presentation
 
+import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
+import org.sopt.sopkaton_team3.data.model.response.ResponseGetSlotDto
+import org.sopt.sopkaton_team3.data.repository.SlotRepository
 import org.sopt.sopkaton_team3.presentation.model.Slot
 
-class SlotViewModel : ViewModel() {
+class SlotViewModel(
+    private val repository: SlotRepository
+) : ViewModel() {
+    private val _getSlotResult = MutableLiveData<ResponseGetSlotDto.GetSlotData>()
+    val getSlotResult : LiveData<ResponseGetSlotDto.GetSlotData> get() = _getSlotResult
+
+    val listOne = MutableLiveData<List<Slot>>()
+    val listTwo = MutableLiveData<List<Slot>>()
+    val listThree = MutableLiveData<List<Slot>>()
     val l1 = listOf<Slot>(
         Slot("윤한이와"),
         Slot("윤한이와"),
@@ -12,7 +27,6 @@ class SlotViewModel : ViewModel() {
         Slot("윤한이와"),
         Slot("윤한이와"),
     )
-
     val l2 = listOf<Slot>(
         Slot("솝트에서"),
         Slot("솝트에서"),
@@ -21,7 +35,6 @@ class SlotViewModel : ViewModel() {
         Slot("솝트에서"),
         Slot("솝트에서"),
     )
-
     val l3 = listOf<Slot>(
         Slot("술먹기"),
         Slot("술먹기"),
@@ -92,4 +105,45 @@ class SlotViewModel : ViewModel() {
             "당연하지 게임하기"
         ),
     )
+    init {
+        listOne.value = l1
+        listTwo.value = l2
+        listThree.value = l3
+    }
+
+
+    suspend fun getSlot(){
+        viewModelScope.launch {
+            repository.getSlot().onSuccess {
+                Log.e("서버통신","성공")
+                _getSlotResult.value = it
+                listOne.value = listOf(
+                    Slot(it?.who),
+                    Slot(it?.who),
+                    Slot(it?.who),
+                    Slot(it?.who),
+                    Slot(it?.who),
+                    Slot(it?.who),
+                )
+                listTwo.value = listOf(
+                    Slot(it?.what),
+                    Slot(it?.what),
+                    Slot(it?.what),
+                    Slot(it?.what),
+                    Slot(it?.what),
+                    Slot(it?.what),
+                )
+                listThree.value = listOf(
+                    Slot(it?.where),
+                    Slot(it?.where),
+                    Slot(it?.where),
+                    Slot(it?.where),
+                    Slot(it?.where),
+                    Slot(it?.where),
+                )
+            }.onFailure {
+                Log.e("서버통신","${it.message}")
+            }
+        }
+    }
 }

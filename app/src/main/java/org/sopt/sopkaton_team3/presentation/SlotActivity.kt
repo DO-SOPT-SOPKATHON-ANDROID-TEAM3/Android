@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -13,7 +14,7 @@ import org.sopt.sopkaton_team3.databinding.ActivitySlotBinding
 
 class SlotActivity : AppCompatActivity() {
     lateinit var binding: ActivitySlotBinding
-    private val viewModel: SlotViewModel by viewModels()
+    private val viewModel: SlotViewModel by viewModels { SlotViewModelFactory() }
     private lateinit var slotAdapter1: SlotAdapter
     private lateinit var slotAdapter2: SlotAdapter
     private lateinit var slotAdapter3: SlotAdapter
@@ -26,7 +27,7 @@ class SlotActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySlotBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        lifecycleScope.launch { viewModel.getSlot() }
         slotAdapter1 = SlotAdapter()
         slotAdapter2 = SlotAdapter()
         slotAdapter3 = SlotAdapter()
@@ -49,7 +50,6 @@ class SlotActivity : AppCompatActivity() {
                     endId: Int
                 ) {
                 }
-
                 override fun onTransitionChange(
                     motionLayout: MotionLayout?,
                     startId: Int,
@@ -84,15 +84,16 @@ class SlotActivity : AppCompatActivity() {
                         binding.mlSlotDown.transitionToState(R.id.end)
                         if (currentCheck == 1) {
                             job1?.cancel()
-                            slotAdapter1.submitList(viewModel.l1)
+                            slotAdapter1.submitList(viewModel.listTwo.value)
                             currentCheck++
                         } else if (currentCheck == 2) {
                             job2?.cancel()
-                            slotAdapter2.submitList(viewModel.l2)
+                            slotAdapter2.submitList(viewModel.listThree.value)
                             currentCheck++
                         } else if (currentCheck == 3) {
                             job3?.cancel()
-                            slotAdapter3.submitList(viewModel.l3)
+                            slotAdapter3.submitList(viewModel.listOne.value)
+                            binding.btnStart.isVisible = true
                             currentCheck++
                         }
                     }
