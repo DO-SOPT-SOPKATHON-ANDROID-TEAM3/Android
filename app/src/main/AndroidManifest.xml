@@ -38,13 +38,13 @@
         <activity
             android:name=".presentation.SlotActivity"
             android:exported="true"
-            android:screenOrientation="portrait" />
-        </activity>
+            android:screenOrientation="portrait" >
+    </activity>
 
-        <activity
-            android:name=".presentation.madeRoom.MadeRoomActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
-    </application>
+    <activity
+        android:name=".presentation.madeRoom.MadeRoomActivity"
+        android:exported="true"
+        android:screenOrientation="portrait"/>
+</application>
 
-</manifest>
+    </manifest>
