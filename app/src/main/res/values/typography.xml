@@ -36,7 +36,7 @@
     <style name="Typography.SopkathonTeam3.Bold_20" parent="">
         <item name="fontFamily">@font/sopkathon_pretendard_bold</item>
         <item name="android:textSize">20sp</item>
-        <item name="lineHeight">30sp</item>
+        <item name="lineHeight">26sp</item>
     </style>
     <style name="Typography.SopkathonTeam3.Bold_16" parent="">
         <item name="fontFamily">@font/sopkathon_pretendard_bold</item>

@@ -9,7 +9,7 @@
         <item name="textAppearanceHeadlineLarge">@style/Typography.SopkathonTeam3.Regular_32</item>
         <item name="textAppearanceHeadlineMedium">@style/Typography.SopkathonTeam3.Regular_28</item>
         <item name="textAppearanceHeadlineSmall">@style/Typography.SopkathonTeam3.Regular_24</item>
-        <item name="textAppearanceTitleLarge">@style/Typography.SopkathonTeam3.Regular_22</item>
+        <item name="textAppearanceTitleLarge">@style/Typography.SopkathonTeam3.Bold_20</item>
         <item name="textAppearanceTitleMedium">@style/Typography.SopkathonTeam3.Bold_16</item>
         <item name="textAppearanceTitleSmall">@style/Typography.SopkathonTeam3.Medium_14</item>
         <item name="textAppearanceLabelLarge">@style/Typography.SopkathonTeam3.Regular_22</item>
