@@ -151,7 +151,7 @@
      android:id="@+id/btn_enter_room"
      android:layout_width="0dp"
      android:layout_height="wrap_content"
-     android:text="좋데볼까?"
+     android:text="입장하기"
      android:paddingVertical="14dp"
      android:layout_marginHorizontal="16dp"
      android:gravity="center"
