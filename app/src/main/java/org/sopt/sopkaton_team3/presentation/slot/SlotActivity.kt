@@ -1,4 +1,4 @@
-package org.sopt.sopkaton_team3.presentation
+package org.sopt.sopkaton_team3.presentation.slot
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +12,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.sopt.sopkaton_team3.R
 import org.sopt.sopkaton_team3.databinding.ActivitySlotBinding
+import org.sopt.sopkaton_team3.presentation.progress.ProgressActivity
 
 class SlotActivity : AppCompatActivity() {
     lateinit var binding: ActivitySlotBinding
@@ -24,9 +25,11 @@ class SlotActivity : AppCompatActivity() {
     private var job1: Job? = null
     private var job2: Job? = null
     private var job3: Job? = null
+    private var name: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySlotBinding.inflate(layoutInflater)
+        name = intent.getStringExtra("name")
         setContentView(binding.root)
         lifecycleScope.launch { viewModel.getSlot() }
         slotAdapter1 = SlotAdapter()
@@ -39,6 +42,7 @@ class SlotActivity : AppCompatActivity() {
         slotAdapter2.submitList(viewModel.list2)
         slotAdapter3.submitList(viewModel.list3)
 
+        binding.tvSlotWhopick.text = "\"$name\""
         initJob()
 
         var isAnimating = false
@@ -51,6 +55,7 @@ class SlotActivity : AppCompatActivity() {
                     endId: Int
                 ) {
                 }
+
                 override fun onTransitionChange(
                     motionLayout: MotionLayout?,
                     startId: Int,
@@ -97,6 +102,7 @@ class SlotActivity : AppCompatActivity() {
                             binding.btnStart.isVisible = true
                             binding.btnStart.setOnClickListener {
                                 val intent = Intent(this, ProgressActivity::class.java)
+                                intent.putExtra("name", name)
                                 startActivity(intent)
                             }
                             currentCheck++

@@ -6,7 +6,7 @@
 
         <variable
             name="viewmodel"
-            type="org.sopt.sopkaton_team3.presentation.ProgressViewModel" />
+            type="org.sopt.sopkaton_team3.presentation.progress.ProgressViewModel" />
 
     </data>
 

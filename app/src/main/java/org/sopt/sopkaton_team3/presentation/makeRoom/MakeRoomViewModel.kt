@@ -24,7 +24,7 @@ class MakeRoomViewModel(
                 _userNameSuccess.value = true
             }
             .onFailure {
-                Log.e("TAG", "onCreate: fail${it}", )
+                Log.e("TAG", "onCreate: fail${it}")
                 _userNameSuccess.value = false
             }
     }

@@ -1,4 +1,4 @@
-package org.sopt.sopkaton_team3.presentation
+package org.sopt.sopkaton_team3.presentation.slot
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -14,7 +14,7 @@ class SlotViewModel(
     private val repository: SlotRepository
 ) : ViewModel() {
     private val _getSlotResult = MutableLiveData<ResponseGetSlotDto.GetSlotData>()
-    val getSlotResult : LiveData<ResponseGetSlotDto.GetSlotData> get() = _getSlotResult
+    val getSlotResult: LiveData<ResponseGetSlotDto.GetSlotData> get() = _getSlotResult
 
     val listOne = MutableLiveData<List<Slot>>()
     val listTwo = MutableLiveData<List<Slot>>()
@@ -105,6 +105,7 @@ class SlotViewModel(
             "당연하지 게임하기"
         ),
     )
+
     init {
         listOne.value = l1
         listTwo.value = l2
@@ -112,10 +113,10 @@ class SlotViewModel(
     }
 
 
-    suspend fun getSlot(){
+    suspend fun getSlot() {
         viewModelScope.launch {
             repository.getSlot().onSuccess {
-                Log.e("서버통신","성공")
+                Log.e("서버통신", "성공")
                 _getSlotResult.value = it
                 listOne.value = listOf(
                     Slot(it?.who),
@@ -142,7 +143,7 @@ class SlotViewModel(
                     Slot(it?.where),
                 )
             }.onFailure {
-                Log.e("서버통신","${it.message}")
+                Log.e("서버통신", "${it.message}")
             }
         }
     }

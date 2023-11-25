@@ -48,7 +48,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presentation.ProgressActivity"
+            android:name=".presentation.progress.ProgressActivity"
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>
@@ -57,12 +57,12 @@
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presentation.SlotActivity"
+            android:name=".presentation.slot.SlotActivity"
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presentation.ResultActivity"
+            android:name=".presentation.result.ResultActivity"
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>

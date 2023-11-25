@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import org.sopt.sopkaton_team3.data.model.response.ResponseUserListData.UserInfo
 import org.sopt.sopkaton_team3.databinding.ItemUserInfoBinding
-
 import org.sopt.sopkaton_team3.util.view.ItemDiffCallback
 
 class MadeRoomAdapter(context: Context) :

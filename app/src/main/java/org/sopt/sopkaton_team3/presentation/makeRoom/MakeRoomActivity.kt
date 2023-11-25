@@ -20,6 +20,7 @@ class MakeRoomActivity : BindingActivity<ActivityMakeRoomBinding>(R.layout.activ
         viewModel.userNameSuccess.observe(this) {
             if (it) {
                 val intent = Intent(this, MadeRoomActivity::class.java)
+                intent.putExtra("name", binding.etName.text.toString())
                 startActivity(intent)
             } else {
                 toast("실패!!!!!!!!!!!!!!")
