@@ -1,4 +1,4 @@
-package org.sopt.sopkaton_team3.presentation
+package org.sopt.sopkaton_team3.presentation.slot
 
 import androidx.recyclerview.widget.RecyclerView
 import org.sopt.sopkaton_team3.databinding.ItemSlotBinding

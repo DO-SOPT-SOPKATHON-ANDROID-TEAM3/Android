@@ -1,4 +1,4 @@
-package org.sopt.sopkaton_team3.presentation
+package org.sopt.sopkaton_team3.presentation.result
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

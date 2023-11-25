@@ -1,4 +1,4 @@
-package org.sopt.sopkaton_team3.presentation
+package org.sopt.sopkaton_team3.presentation.progress
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

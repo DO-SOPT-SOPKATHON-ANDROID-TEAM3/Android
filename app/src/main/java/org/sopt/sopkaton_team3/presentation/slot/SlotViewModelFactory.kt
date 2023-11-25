@@ -1,4 +1,4 @@
-package org.sopt.sopkaton_team3.presentation
+package org.sopt.sopkaton_team3.presentation.slot
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

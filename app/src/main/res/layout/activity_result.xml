@@ -71,7 +71,6 @@
                 android:id="@+id/tv_result_my_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{data.name}"
                 android:textAppearance="?textAppearanceTitleLarge"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="@id/tv_result_my"

@@ -11,17 +11,18 @@ import org.sopt.sopkaton_team3.data.repository.EnterRoomRepository
 
 class EnterRoomViewModel(private val repository: EnterRoomRepository) : ViewModel() {
     private val _requestResult: MutableLiveData<ResponseEnterDto> = MutableLiveData()
-    val requestResult: LiveData<ResponseEnterDto> get() =  _requestResult
+    val requestResult: LiveData<ResponseEnterDto> get() = _requestResult
 
     private val _requestSuccess: MutableLiveData<Boolean> = MutableLiveData()
-    val requestSuccess: LiveData<Boolean> get() =  _requestSuccess
+    val requestSuccess: LiveData<Boolean> get() = _requestSuccess
 
     fun enter(code: String, name: String) {
         viewModelScope.launch {
-            repository.getEnter(RequestEnterDto(
-                code,
-                name
-            )
+            repository.getEnter(
+                RequestEnterDto(
+                    code,
+                    name
+                )
             )
                 .onSuccess {
                     _requestResult.value = it

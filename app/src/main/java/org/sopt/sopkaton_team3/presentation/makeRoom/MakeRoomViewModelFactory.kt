@@ -2,13 +2,10 @@ package org.sopt.sopkaton_team3.presentation.makeRoom
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import org.sopt.sopkaton_team3.data.ServicePool
 import org.sopt.sopkaton_team3.data.ServicePool.makeRoomService
-import org.sopt.sopkaton_team3.data.repository.MadeRoomRepository
 import org.sopt.sopkaton_team3.data.repository.MakeRoomRepository
-import org.sopt.sopkaton_team3.presentation.madeRoom.MadeRoomViewModel
 
-class MakeRoomViewModelFactory : ViewModelProvider.Factory{
+class MakeRoomViewModelFactory : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MakeRoomViewModel::class.java)) { //modelClass가 ExampleViewModel인지 확인
             val repository =
