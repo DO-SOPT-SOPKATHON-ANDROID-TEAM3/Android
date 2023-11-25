@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import org.sopt.sopkaton_team3.R
+import org.sopt.sopkaton_team3.presentation.initRoom.InitRoomActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         videoView.setOnCompletionListener {
             // 비디오 재생이 끝나면 메인 액티비티로 이동
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, InitRoomActivity::class.java)
             startActivity(intent)
             finish() // 스플래시 스크린 액티비티 종료
         }

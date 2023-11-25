@@ -96,7 +96,7 @@ class SlotActivity : AppCompatActivity() {
                             slotAdapter3.submitList(viewModel.listOne.value)
                             binding.btnStart.isVisible = true
                             binding.btnStart.setOnClickListener {
-                                val intent = Intent(this, ResultActivity::class.java)
+                                val intent = Intent(this, ProgressActivity::class.java)
                                 startActivity(intent)
                             }
                             currentCheck++
