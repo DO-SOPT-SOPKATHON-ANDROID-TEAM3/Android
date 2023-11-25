@@ -5,15 +5,16 @@ import android.os.CountDownTimer
 import androidx.activity.viewModels
 import org.sopt.sopkaton_team3.R
 import org.sopt.sopkaton_team3.databinding.ActivityProgressBinding
+import org.sopt.sopkaton_team3.util.activity.startActivity
 import org.sopt.sopkaton_team3.util.binding.BindingActivity
 
 class ProgressActivity : BindingActivity<ActivityProgressBinding>(R.layout.activity_progress) {
     private val progressViewModel by viewModels<ProgressViewModel>()
-    private var totalPeople = 7
+    private var totalPeople = 6
 
     private val countDownTimer =
         object :
-            CountDownTimer((((totalPeople - 4) * MILLISECONDS).toLong()), MILLISECONDS.toLong()) {
+            CountDownTimer(((totalPeople * MILLISECONDS).toLong()), MILLISECONDS.toLong()) {
             override fun onTick(millisUntilFinished: Long) {
                 val peopleRemaining = millisUntilFinished / MILLISECONDS
 
@@ -21,6 +22,7 @@ class ProgressActivity : BindingActivity<ActivityProgressBinding>(R.layout.activ
             }
 
             override fun onFinish() {
+                startActivity<ResultActivity>()
             }
         }
 
