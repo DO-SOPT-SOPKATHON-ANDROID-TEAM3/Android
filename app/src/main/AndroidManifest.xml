@@ -16,7 +16,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31" >
         <activity
-            android:name=".presentation.EnterRoomActivity"
+            android:name=".presentation.enterRoom.EnterRoomActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.InitRoomActivity"
@@ -47,9 +47,9 @@
             />
 
         <activity
-           
 
-             android:name=".presentation.SlotActivity"
+
+            android:name=".presentation.SlotActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -58,6 +58,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".presentation.madeRoom.MadeRoomActivity"
             android:exported="true"
