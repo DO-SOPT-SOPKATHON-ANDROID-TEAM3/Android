@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="방 입장하기"
+                android:text=""
                 android:textAppearance="?textAppearanceTitleLarge"
                 android:textColor="@color/black" />
 
@@ -44,7 +44,7 @@
             android:layout_width="210dp"
             android:layout_height="0dp"
             android:layout_marginHorizontal="29dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="60dp"
             android:progress="@{viewmodel.leftPeople}"
             app:cpb_background_progressbar_color="#D9D9D9"
             app:cpb_background_progressbar_width="5dp"
@@ -86,6 +86,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="-20dp"
             android:src="@drawable/img_loading"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/circularProgressBar" />
