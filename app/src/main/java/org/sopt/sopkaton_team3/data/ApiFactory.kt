@@ -27,4 +27,5 @@ object ApiFactory {
 object ServicePool {
     //val dummyService = ApiFactory.create<DummyService>()
     val exampleService = ExampleSource()
+    val madeRoomService = MadeRoomUserListSource()
 }
