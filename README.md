@@ -24,7 +24,7 @@
 </br>
 
 # 💻 Code Convention
-[NOTION Code Convetion Link](https://www.notion.so/Code-Convention-74426b8e2bbe49bdada0c83b8fe68116?pvs=4)    
+[NOTION Code Convetion Link](https://amazing-log-b60.notion.site/Code-Convention-74426b8e2bbe49bdada0c83b8fe68116)
 </br>
 
 # 🔖 Branch Strategy
