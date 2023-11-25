@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import org.sopt.sopkaton_team3.databinding.ActivityEnterRoomBinding
 import org.sopt.sopkaton_team3.presentation.madeRoom.MadeRoomActivity
+import org.sopt.sopkaton_team3.util.context.toast
 
 class EnterRoomActivity : AppCompatActivity() {
     lateinit var binding: ActivityEnterRoomBinding
@@ -38,7 +39,8 @@ class EnterRoomActivity : AppCompatActivity() {
                 val intent = Intent(this, MadeRoomActivity::class.java)
                 intent.putExtra("name", binding.etRoomName.text.toString())
                 startActivity(intent)
-            } else {
+            }else{
+                toast("잘못된 초대 코드입니다.")
             }
         }
     }
