@@ -16,6 +16,12 @@ https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/4ba6f
 https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/5096af6d-008e-4fa7-9168-40151118ba7e
 
 
+
+
+https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/113014331/b00095da-c74b-43eb-b43b-741d3cbd4301
+
+
+
 ![default](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/fdc7025b-0ceb-4f09-acb8-3e52d57cdb2c)
 초기화면
 
