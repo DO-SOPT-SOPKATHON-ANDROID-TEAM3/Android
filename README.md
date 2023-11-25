@@ -7,7 +7,33 @@
 </br>
 
 # 🎬 시연영상
-곧 업로드 예정입니다.
+
+
+https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/4ba6f0f4-b74d-4636-a60b-93328cd41140
+
+
+
+https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/5096af6d-008e-4fa7-9168-40151118ba7e
+
+
+![default](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/fdc7025b-0ceb-4f09-acb8-3e52d57cdb2c)
+초기화면
+
+![create](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/e159a72c-93f7-40ea-bf43-3d82d8a6dff0)
+방 만들기
+
+![enter](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/9d923924-f95f-4f9e-a138-9873605b1fba)
+방 입장하기
+
+![Slot](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/8adcbcfe-bcdf-474d-82a5-438e771ab66a)
+Slot화면
+
+![Loading](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/48ff1fb3-daf1-48bf-b5cb-c9185cf0411e)
+Loading화면
+
+![end](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/c9475868-ca65-4a1f-a23f-33a98bdf9df3)  
+결과 확인
+</br>
 
 # 👨‍👩‍👧‍👦 Members
 |<img src="https://avatars.githubusercontent.com/u/113014331?v=4" width="128" />|<img src="https://avatars.githubusercontent.com/u/113578158?v=4" width="128" />|<img src="https://avatars.githubusercontent.com/u/52882799?v=4" width="128" />|<img src="https://avatars.githubusercontent.com/u/128459613?v=4" width="128" />| 
@@ -40,4 +66,6 @@
 
 # 📸 안봉이들 사진첩
 Before   
-![before_pic](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/.github/assets/52882799/5ba2d617-7f01-4661-bd98-3101f9ade409)
+![before_pic](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/.github/assets/52882799/5ba2d617-7f01-4661-bd98-3101f9ade409)   
+After
+![after](https://github.com/DO-SOPT-SOPKATHON-ANDROID-TEAM3/Android/assets/52882799/807470c1-4ca6-4dbd-b4a3-0b255fd85f24)
