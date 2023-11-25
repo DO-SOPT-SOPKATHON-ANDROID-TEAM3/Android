@@ -147,7 +147,7 @@
      app:layout_constraintEnd_toEndOf="parent"
      app:layout_constraintTop_toBottomOf="@id/tv_room_name"/>
 
- <Button
+ <androidx.appcompat.widget.AppCompatButton
      android:id="@+id/btn_enter_room"
      android:layout_width="0dp"
      android:layout_height="wrap_content"
@@ -157,6 +157,7 @@
      android:gravity="center"
      android:textColor="@color/white"
      android:textSize="16sp"
+     android:background="@drawable/shape_gray_line_5_rect"
      android:layout_marginBottom="20dp"
      android:backgroundTint="@color/black"
      android:fontFamily="@font/pretendard_medium"
