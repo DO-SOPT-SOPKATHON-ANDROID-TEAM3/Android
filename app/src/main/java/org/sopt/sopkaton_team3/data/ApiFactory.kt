@@ -6,6 +6,7 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.sopt.sopkaton_team3.BuildConfig
+import org.sopt.sopkaton_team3.data.service.EnterService
 import org.sopt.sopkaton_team3.data.service.SlotService
 import org.sopt.sopkaton_team3.data.service.MakeRoomService
 import retrofit2.Retrofit
@@ -33,4 +34,5 @@ object ServicePool {
     val madeRoomService = MadeRoomUserListSource()
     val slotService = ApiFactory.create<SlotService>()
     val makeRoomService = ApiFactory.create<MakeRoomService>()
+    val enterRoomService = ApiFactory.create<EnterService>()
 }
