@@ -10,5 +10,6 @@ class MadeRoomViewHolder(private val binding: ItemUserInfoBinding) :
     fun onBind(data: ResponseUserListData.UserInfo) {
         Log.e("TAG", "데이터 바인딩이딩딩")
         binding.userInfo = data
+        binding.userImage.setImageResource(data.image)
     }
 }

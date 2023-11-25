@@ -51,7 +51,7 @@
                 android:background="@drawable/shape_gray_line_5_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
-                tools:text="G" />
+                android:text="G" />
 
             <TextView
                 android:id="@+id/made_room_invite_code_second"
@@ -61,7 +61,7 @@
                 android:background="@drawable/shape_gray_line_5_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
-                tools:text="O" />
+                android:text="O" />
 
             <TextView
                 android:id="@+id/made_room_invite_code_third"
@@ -71,7 +71,7 @@
                 android:background="@drawable/shape_gray_line_5_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
-                tools:text="O" />
+                android:text="O" />
 
             <TextView
                 android:id="@+id/made_room_invite_code_fourth"
@@ -81,7 +81,7 @@
                 android:background="@drawable/shape_gray_line_5_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
-                tools:text="D" />
+                android:text="D" />
 
             <TextView
                 android:id="@+id/made_room_invite_code_fifth"
@@ -91,7 +91,7 @@
                 android:background="@drawable/shape_gray_line_5_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
-                tools:text="A" />
+                android:text="A" />
 
             <TextView
                 android:id="@+id/made_room_invite_code_sixth"
@@ -100,8 +100,7 @@
                 android:background="@drawable/shape_gray_line_5_rect"
                 android:gravity="center"
                 android:textAppearance="?textAppearanceLabelLarge"
-                tools:text="Y" />
-
+                android:text="Y" />
         </LinearLayout>
 
         <TextView
@@ -126,6 +125,7 @@
             tools:listitem="@layout/item_user_info" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_made_room_join"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="42dp"
