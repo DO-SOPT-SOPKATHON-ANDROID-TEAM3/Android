@@ -10,6 +10,7 @@ class InitRoomActivity : AppCompatActivity() {
     lateinit var binding : ActivityInitRoomBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityInitRoomBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         initMakeRoomBtnListener()
