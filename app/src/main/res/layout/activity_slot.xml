@@ -58,7 +58,7 @@
                 android:id="@+id/tv_slot_whopick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="&quot;김바라&quot;"
+                android:text="&quot;양정윤&quot;"
                 android:textAppearance="@style/Typography.SopkathonTeam3.Bold_24" />
             <TextView
                 android:layout_width="wrap_content"

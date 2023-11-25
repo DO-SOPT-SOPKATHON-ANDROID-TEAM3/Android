@@ -109,6 +109,10 @@ class SlotActivity : AppCompatActivity() {
                 }
             }
         }
+
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
     }
 
     private fun initJob() {
