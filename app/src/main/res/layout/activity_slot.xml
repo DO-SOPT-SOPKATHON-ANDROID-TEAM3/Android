@@ -11,6 +11,28 @@
         android:layout_height="match_parent"
         tools:context=".presentation.SlotActivity">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_slot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/goodday_pink"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow_whit_24" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAppearance="?textAppearanceTitleLarge"
+                android:text="방 입장하기" />
+        </androidx.appcompat.widget.Toolbar>
+
         <ImageView
             android:id="@+id/iv_slot"
             android:layout_width="0dp"
@@ -82,6 +104,14 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <ImageView
+            android:id="@+id/iv_slot_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_slot_corner"
+            app:layout_constraintBottom_toBottomOf="@id/ml_slot_down"
+            app:layout_constraintStart_toEndOf="@id/iv_slot" />
+
         <androidx.constraintlayout.motion.widget.MotionLayout
             android:id="@+id/ml_slot_down"
             android:layout_width="wrap_content"
@@ -111,5 +141,19 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="좋데보자"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/shape_gray_line_5_rect"
+            android:backgroundTint="@color/goodday_pink"
+            android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
