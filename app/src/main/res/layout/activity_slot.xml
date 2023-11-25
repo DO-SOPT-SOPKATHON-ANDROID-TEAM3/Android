@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textAppearance="?textAppearanceTitleLarge"
-                android:text="방 입장하기" />
+                android:text="슬롯 돌리기" />
         </androidx.appcompat.widget.Toolbar>
 
         <TextView
