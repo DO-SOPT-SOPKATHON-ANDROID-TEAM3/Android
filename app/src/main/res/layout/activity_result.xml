@@ -20,27 +20,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/iv_result_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_left_arrow_whit_24" />
+
             <TextView
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="좋은데?"
                 android:textAppearance="?textAppearanceTitleLarge"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/iv_toolbar_back"
                 app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -144,11 +144,11 @@
             app:layout_constraintTop_toBottomOf="@id/cl_result" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_marginBottom="30dp"
             android:id="@+id/rv_result"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_result_group_members"
